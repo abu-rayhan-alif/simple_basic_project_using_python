@@ -1,0 +1,45 @@
+import datetime
+import calendar
+def simple_calculator():
+ print("Addition>>A or a""\n",
+          "Subtraction  >> S or s""\n",
+          "Multiplication >>  M or m""\n",
+          "Division >> D or d""\n")
+ print("If you want to close.Enter Quit")
+ try:
+    while True:
+
+
+
+
+     choose = input("Please Select What You Want To Do >>.." "\n")
+     if choose=="Quit".lower():
+       exit()
+     if choose =="S".lower():
+        num1 = int(input("Enter First number "))
+        num2 = int(input("Enter Second Number "))
+        print ("The Substraction is :>>>",num1-num2)
+     elif choose =="M".lower() :
+        num1 = int(input("Enter First number "))
+        num2 = int(input("Enter Second Number "))
+        print ("The Multiplication is :>>> ",num1*num2)
+     elif choose== "D".lower():
+        num1 = int(input("Enter First number "))
+        num2 = int(input("Enter Second Number "))
+        print ("The division  is :>>> ",num1/num2)
+     elif choose=="A".lower():
+        num1 = int(input("Enter First number "))
+        num2 = int(input("Enter Second Number "))
+        print ("The Addition is :>>> ",num1+num2)
+
+     else:
+        print("Invalid Number !! Please Input A valid Number")
+
+ except  ValueError:
+         print("Please Enter Valid Digit Only")
+ except ZeroDivisionError:
+     print( 'Please Enter Valid Digit Only,division by zero not Possible')
+ finally:"Thanks For Using "
+datetime = datetime.datetime.now()
+print(datetime)
+simple_calculator()
