@@ -1,0 +1,29 @@
+import random
+from  random import randrange
+
+def simple_guess_game():
+
+ while True:
+    guss_number=int(input("Enter You Number : >>>"))
+    print("Your Number >>",guss_number)
+    guss=random.randrange(0,5)
+    print("Computer Number>>",guss)
+
+    if guss_number > 10:
+         print("Please Enter NUmber 1 between 10")
+
+    elif guss == guss_number:
+        print("Congratulation!! You Are Win!!")
+
+    else:
+        print ("Opps! Try Again")
+    choose=(input("Are You Play Again  "))
+    print(choose)
+    if choose=="10":
+        continue
+
+    elif choose=="01":
+        break
+
+
+simple_guess_game()
