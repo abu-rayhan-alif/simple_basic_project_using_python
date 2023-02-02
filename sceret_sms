@@ -1,0 +1,18 @@
+
+def secret_sms():
+
+  alphabate="abcdefghijklmnopqrstuvxxyz"
+  key=3
+  message = input("Please enter a message to encrypt: ").lower()
+  new_massage=''
+  for i in message:
+
+      possition=alphabate.find(i)
+
+      new_possttion=(possition+key)%26
+      new_character=alphabate[new_possttion]
+      new_massage += new_character
+
+
+  print("Your New Massage is :>>>",new_massage)
+secret_sms()
