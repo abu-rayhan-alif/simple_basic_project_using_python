@@ -1,0 +1,20 @@
+alphabate="aeiou"
+score=0
+
+first_friend_name=input("Enter Girl Frind Name").lower()
+second_friend_name=input("Enter Boy Frind Name").lower()
+new_res=first_friend_name+second_friend_name
+for i in new_res:
+ #print(i)
+ if i in "aeiou":
+    score+=5
+
+
+ elif i in "friend":
+    score+=10
+
+
+ elif score>45:
+    print("best Friend")
+
+print(f"Your Love Score {score}  %")
