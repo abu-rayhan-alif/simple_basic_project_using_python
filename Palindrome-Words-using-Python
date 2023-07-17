@@ -1,0 +1,15 @@
+def paliddrome(sentence):
+    for i in (",.'?/><}{{}}'"):
+        sentence=sentence.replace(i, "")
+    result=[]
+    words = sentence.split(' ')
+    for item in words:
+        item=item.lower()
+        if item==item[::-1]:
+
+            result.append(item)
+
+    return result
+
+sentence=input("Enter a Sentence : ")
+print(paliddrome(sentence))
