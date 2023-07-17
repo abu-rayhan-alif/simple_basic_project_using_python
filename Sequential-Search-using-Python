@@ -1,0 +1,11 @@
+def sequential_search(list,search_number):
+    found = False
+    for item in list:
+
+        if item==search_number:
+            found=True
+    return found
+numbers=list(range(0,100))
+result = sequential_search(numbers,1002)
+
+print(result)
