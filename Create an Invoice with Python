@@ -1,0 +1,56 @@
+from datetime import datetime
+# create a product and price for three items
+
+print("Enter Produt range" '\n')
+start=int(input("Enter Start Possiton default=1 : " '\n'))
+end=int(input("Enter End Possiton " '\n'))
+product_range = range(start,end+1)
+total_amout = 0
+curr_amount=[]
+product_list=[]
+for i in product_range:
+
+  product_name,product_price =(input(" Your Product Name : ")) ,float(input(" Your Product Price : "))
+  curr_amount.append(product_price)
+  product_list.append(product_name)
+
+print(50*"+")
+print("Customer Copy")
+
+print("product Name : "'{}' "<<>>" "product Price : "'{}'.format(product_list,curr_amount))
+
+# create a company name and information
+comapy_name='Null Company Limited'
+comapy_address="Null"
+compay_phone_no='00000000'
+
+# declare ending message
+message = 'Thanks for shopping with us today!'
+
+# create a  border
+print('*' * 50)
+
+# print company information
+print('{}'.format(comapy_name))
+print('{}'.format(comapy_address))
+print('{}'.format(compay_phone_no))
+# create a border
+print('*' * 50)
+
+# print a line between sections
+print('=' * 50)
+'''
+'''
+print(("Total Price >>",sum(curr_amount)))
+'''
+'''
+# print a line between sections
+print('=' * 50)
+
+# output thank you message
+print('\n\t{}\n'.format(message))
+date_time=datetime.now()
+print(date_time)
+
+# create a bottom border
+print('#' * 50)
