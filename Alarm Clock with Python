@@ -1,0 +1,13 @@
+from datetime import datetime
+from playsound import playsound
+alaram_hour=int(input("Enter Hour : "))
+alaram_min=int(input("Enter min : "))
+alaram_time=input("am or pm : ").upper()
+if alaram_time=="pm":
+    alaram_hour+=12
+print("Setting up alarm..")
+while True:
+    if alaram_hour==datetime.now().hour and  alaram_min==datetime.now().minute:
+        print("playing...")
+        playsound("H:\Songs\morning_flower.mp3")#path of the music
+        break
