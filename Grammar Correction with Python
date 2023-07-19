@@ -1,0 +1,4 @@
+from gingerit.gingerit import  GingerIt
+text=input("Enter Text")
+correct_text=GingerIt().parse(text)
+print(correct_text['result'])
