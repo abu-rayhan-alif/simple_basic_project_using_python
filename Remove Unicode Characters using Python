@@ -1,0 +1,3 @@
+a = input("Enter Text")
+a=a.encode('ascii','ignore').decode()
+print(a)
