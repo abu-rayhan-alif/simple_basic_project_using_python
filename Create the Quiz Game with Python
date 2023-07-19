@@ -1,0 +1,30 @@
+def quiz_game(guess,answer):
+    global score
+    attempt=0
+    while attempt < 3:
+        if guess.lower()==answer.lower():
+
+            print("Correct Answer")
+            score += 1
+            break
+        else:
+            if attempt<2:
+                guess = input("Sorry Wrong Answer, try again")
+            attempt+=1
+
+
+    if attempt==3:
+            print("The Correct answer is ", answer)
+
+
+
+
+score=0
+print("Guess the Animal")
+guess1 = input("Which City Capital Of Bangladesh ")
+quiz_game(guess1, "Dhaka")
+guess2 = input("Which is the fastest land animal? ")
+quiz_game(guess2, "Cheetah")
+guess3 = input("Which is the larget animal? ")
+quiz_game(guess3, "Blue Whale")
+print("Your Score is "+ str(score))
