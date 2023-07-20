@@ -1,0 +1,8 @@
+from spellchecker import SpellChecker
+corrector=SpellChecker()
+word=input("ENter a word")
+if word in corrector:
+    print("Right Spelling")
+else:
+    correct_word=corrector.correction(word)
+    print("correct word : ",correct_word)
